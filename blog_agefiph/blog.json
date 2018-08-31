@@ -1,33 +1,34 @@
 {
-    "id": "09090ee0-42e6-11e8-9004-39b9c3f3625b",
-    "name": "Homepage Community custo",
-    "title": "Homepage Community custo",
-    "description": "Modify homepage community css with css/js files",
+    "name": "Agefiph Blog",
+    "title": "Agefiph Blog",
+    "description": "Modifie le blog - fichier css",
     "services": [
         "Customizer"
     ],
     "extensions": [
         {
-            "id": "70a548b2-1d12-4242-8424-208745f1e69c",
-            "name": "Inklusif2",
+            "id": "8d9a6849-1086-4b89-a851-c9fc3a9e4fee",
+            "name": "Extension Blog",
             "type": "com.ibm.customizer.ui",
             "payload": {
                 "include-files": [
-                    "inklusif2/com.css"
+                    "blog_agefiph/blog.css",
+                    "blog_agefiph/commonTools.js",
+                    "blog_agefiph/blog.js"
                 ],
                 "include-repo": {
                     "name": "novaliance-samples"
                 },
                 "match": {
                     "user-name": [
-                        "Mathieu FABIEN",
                         "Vincent GICQUEL",
+                        "Mathieu FABIEN",
                         "test agefiph"
                     ]
                 }
             },
-            "path": "communities",
-            "application": "Homepage Community custo"
+            "path": "blogs",
+            "application": "Blog"
         }
     ]
 }

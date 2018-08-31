@@ -1,25 +1,23 @@
 {
-    "name": "Blog Customization",
-    "title": "Inklusif",
-    "description": "Modify blog css",
+    "name": "Agefiph Homepage Community custo",
+    "title": "Agefiph Homepage Community custo",
+    "description": "Modify homepage community css with css/js files",
     "services": [
         "Customizer"
     ],
     "state": "enabled",
     "extensions": [
         {
-            "id": "d980650b-53c8-4ad0-99f7-2bf45b931ba3",
-            "name": "Inklusif",
+            "id": "8e2daad4-62a8-4682-82a8-02cd0cb3fbe2",
+            "name": "Extension Home page",
             "type": "com.ibm.customizer.ui",
             "payload": {
+                "include-files": [
+                    "homepage_agefiph/homepage.css"
+                ],
                 "include-repo": {
                     "name": "novaliance-samples"
                 },
-                "include-files": [
-                    "inklusif/blog-inklusif.css",
-                    "inklusif/commonTools.js",
-                    "inklusif/blog-inklusif.js"
-                ],
                 "match": {
                     "user-name": [
                         "Mathieu FABIEN",
@@ -28,8 +26,8 @@
                     ]
                 }
             },
-            "path": "blogs",
-            "application": "Blog Customization",
+            "path": "communities",
+            "application": "Homepage Community custo",
             "state": "enabled"
         }
     ]
