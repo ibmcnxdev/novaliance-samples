@@ -3,13 +3,20 @@
 	border-left: 4px solid #EB6608 !important;
 }
 
+/* bordure haut et bas hover */
+.lotusui30 .lotusColLeft .lotusMenu li a:hover,
+.lotusui30 .lotusColLeft .lotusMenu li a:focus {
+	border-top: none !important;
+	border-bottom: none !important;	
+}
+
 /* Lien menu gauche */
 .lotusui30 .lotusMenu li.lotusSelected a, 
 .lotusui30 .lotusMenu li.lotusSelected a:focus,
 .lotusui30 .lotusMenu li a,
 .lotusui30 .lotusMenu li a:hover,
 .lotusui30 .lotusSection h2,
-.lotusui30_body {
+.lotusui30_layout .lotusColLeft a {
 	color: #FFFFFF !important;
 }
 
@@ -49,6 +56,12 @@
 .lconnSearchResults h4 a b {
 	font-weight: bold !important;
 	font-size: 14px !important;
+}
+
+/* Precent suivant barre recherche */
+.search-global-search-restyle .lotusui30 .icSearchResultsPage .lconnSearchResults .icPagination .lotusFirst,
+.search-global-search-restyle .lotusui30 .icSearchResultsPage .lconnSearchResults .icPagination .icnext {
+	color: #1B4859 !important;
 }
 
 /* Paging */
@@ -114,5 +127,3 @@
 	color: #FFFFFF !important;
 	box-shadow: none !important;
 }
-
-
