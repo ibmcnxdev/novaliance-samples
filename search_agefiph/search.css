@@ -3,6 +3,16 @@
 	border-left: 4px solid #EB6608 !important;
 }
 
+/* Lien menu gauche */
+.lotusui30 .lotusMenu li.lotusSelected a, 
+.lotusui30 .lotusMenu li.lotusSelected a:focus,
+.lotusui30 .lotusMenu li a,
+.lotusui30 .lotusMenu li a:hover,
+.lotusui30 .lotusSection h2,
+.lotusui30_body {
+	color: #FFFFFF !important;
+}
+
 /* Texte de recherche */
 .search-global-search-restyle .lotusui30 .icSearchResultsPage .lconnSearchHeader .lotusSearch .icSearchInputBox input {
 	color: #1B4859 !important;
@@ -25,6 +35,22 @@
 	font-weight: bold !important;
 }
 
+/* Barre contenu recherche */
+.search-global-search-restyle .lotusui30 .icSearchResultsPage div.lconnSearchResults .lotusTable {
+    border-top: 1px solid #1B4859 !important;
+}
+
+/* Texte contenu recherche */
+.search-global-search-restyle .lotusui30 .icSearchResultsPage .lconnSearchResults .lotusSort,
+.search-global-search-restyle .lotusui30 .icSearchResultsPage div.lconnSearchResults .lotusTable tr:hover .icSearchDetails a{
+	color: #000000 !important;
+}
+
+.lconnSearchResults h4 a b {
+	font-weight: bold !important;
+	font-size: 14px !important;
+}
+
 /* Paging */
 .search-global-search-restyle .lotusui30 .icSearchResultsPage .lconnSearchResults .lotusPaging {
 	color: #1B4859 !important;
@@ -33,6 +59,10 @@
 /* Paging actif */
 .search-global-search-restyle .lotusui30 .icSearchResultsPage .lconnSearchResults .icPagination .icSelected {
 	color: #EB6608 !important;
+}
+
+.lotusui30 a, .lotusui30 a:hoover {
+    color: #1B4859;
 }
 
 
@@ -73,9 +103,10 @@
 
 
 /* Recherche avancée - select clear all */
-.lotusui30 a {
+/*.lotusui30 a {
 	color: #EB6608 !important;
-}	
+}*/
+
 
 /* Recherche avancée - bouton rechercher */
 .lotusui30 .lotusBtn, .lotusui30 .lotusBtn:hover {
