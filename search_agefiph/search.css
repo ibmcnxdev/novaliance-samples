@@ -5,11 +5,16 @@
 
 /* bordure haut et bas hover */
 .lotusui30 .lotusMenu li.lotusSelected a,
-.lotusui30 .lotusMenu li.lotusSelected a:hover,
 .lotusui30 .lotusColLeft .lotusMenu li a:hover,
 .lotusui30 .lotusColLeft .lotusMenu li a:focus {
 	border-top: none !important;
 	border-bottom: none !important;	
+}
+
+.lotusui30 .lotusMenu li.lotusSelected a:focus, 
+.lotusui30 .lotusMenu li.lotusSelected a:hover {
+	border-top: 1px solid transparent !important;
+	border-bottom: 1px solid transparent !important;
 }
 
 /* Lien menu gauche */
@@ -21,6 +26,11 @@
 .lotusui30_layout .lotusColLeft a,
 .lotusui30_layout .lotusColLeft .lconnEmpty {
 	color: #FFFFFF !important;
+}
+
+.lotusui30 .lotusColLeft .lotusInlinelist li {
+    border-left-color: #FFFFFF !important;
+    color: #FFFFFF !important;
 }
 
 /* Texte de recherche */
@@ -132,4 +142,60 @@
 	background-color: #EB6608 !important;
 	color: #FFFFFF !important;
 	box-shadow: none !important;
+}
+
+/* Aspect des checkboxes */
+/* :before sert à créer la case à cocher */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+	content: '';
+	position: absolute;
+	left:0; top: 2px;
+	width: 14px;  /* dim. de la case */
+	height: 14px; /* dim. de la case */
+	border: 1px solid #1B4859;
+	background: #FFFFFF;
+}
+ 
+/* Aspect général de la coche */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+	content: '✔';
+	position: absolute;
+	top: 0; left: 4px;
+	font-size: 11px;
+	color: #EB6608;
+	transition: all .2s; /* on prévoit une animation */
+}
+/* Aspect si "pas cochée" */
+[type="checkbox"]:not(:checked) + label:after {
+	opacity: 0; /* coche invisible */
+	transform: scale(0); /* mise à l'échelle à 0 */
+}
+/* Aspect si "cochée" */
+[type="checkbox"]:checked + label:after {
+	opacity: 1; /* coche opaque */
+	transform: scale(1); /* mise à l'échelle 1:1 */
+}
+
+/* aspect désactivée */
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+	box-shadow: none;
+	border-color: #bbb;
+	background-color: #ddd;
+}
+/* styles de la coche (si cochée/désactivée) */
+[type="checkbox"]:disabled:checked + label:after {
+	color: #999;
+}
+/* on style aussi le label quand désactivé */
+[type="checkbox"]:disabled + label {
+	color: #aaa;
+}
+ 
+/* aspect au focus de l'élément */
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {
+	border: 1px solid #1B4859;
 }
